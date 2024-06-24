@@ -1,0 +1,82 @@
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置 body 样式 */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* 设置 context-menu 样式 */
+.context-menu {
+    position: absolute;
+    z-index: 10;
+    width: 75px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 15px 35px rgba(50, 50, 90, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    display: none;
+}
+
+form {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  input {
+    border: none;
+    outline: none; /* 这可以去掉输入框的默认轮廓样式 */
+    padding: 10px; /* 调整输入框的内边距 */
+    width: 100%; /* 设置输入框宽度为100% */
+  }
+
+/* 设置统一的背景样式 */
+
+  /* 设置模块样式 */
+  #search, #menu, #chart {
+    background-color: #fff; /* 设置模块背景颜色 */
+    padding: 20px; /* 设置内边距 */
+    border-radius: 8px; /* 设置圆角边框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 设置阴影效果 */
+    margin-bottom: 20px; /* 设置模块之间的下外边距 */
+  }
+/* 自定义每个模块的布局 */
+#search {
+    width: 100%; /* 设置宽度 */
+}
+
+#menu {
+    width: 80%; /* 设置宽度 */
+}
+
+#chart {
+    width: 80%; /* 设置宽度 */
+}
+
+.module {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
